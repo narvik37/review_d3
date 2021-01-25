@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from cookies import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('cookies/', views.index),
+    ]
